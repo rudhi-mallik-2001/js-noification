@@ -79,7 +79,7 @@ function createNotification(text, bgColor, icon) {
     }
     return node;
 }
-const notification = {
+const toast = {
     warn: function (text) {
         this.showNotification(text, 'orange', '&#9888;');
     },
