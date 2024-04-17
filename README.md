@@ -1,14 +1,38 @@
-🚀 Excited to share a recent project with the community! I've been working on a notification system using HTML, CSS, and JavaScript. Here's a rundown:
+# Customizable JavaScript Notification System
 
-🔔 Notification System Overview:
+## Overview
+This JavaScript Notification System provides a simple yet effective way to display dynamic notifications on your web page. With customizable text, background colors, and icons, it allows you to create notifications for various purposes such as warnings, errors, information updates, or success messages.
 
-I've built a flexible notification system capable of displaying various types of notifications (info, warning, error, success) with customizable text, background colors, and icons. The notifications are displayed in a sleek, animated container at the bottom left of the screen. Each notification includes a progress bar indicating its lifespan and a close button for user interaction.
+## Features
+- **Customizable Notifications:** Tailor notifications to your needs with customizable text, background colors, and icons.
+- **Dynamic Animation:** Smooth animation effects for notification appearance and disappearance enhance user experience.
+- **Hover Interaction:** Pause and resume notification animation by hovering over them.
+- **Automatic Removal:** Notifications automatically disappear after a set duration, keeping your interface clutter-free.
 
+## Getting Started
+1. **Include JavaScript File:**
+   - Include the `notification.js` file in your project.
+   
+2. **Usage:**
+   - Use the provided functions to display different types of notifications:
+     - `toast.warn(text)`
+     - `toast.error(text)`
+     - `toast.info(text)`
+     - `toast.success(text)`
+     
+3. **Customization:**
+   - Customize notification text, background colors, and icons directly in the JavaScript code.
 
-🛠️ Key Features & Technologies:
+## Example
+```javascript
+// Display a warning notification
+toast.warn("This is a warning message!");
 
-Dynamic Creation: Notifications are dynamically generated and added to the notification container, with support for multiple simultaneous notifications.
+// Display an error notification
+toast.error("Oops! Something went wrong.");
 
-Customization: Users can specify the type of notification (info, warning, error, success) along with the text and background color.
+// Display an information notification
+toast.info("Just an update: New features added.");
 
-Animation & Interaction: Smooth animations are applied to both the appearance and disappearance of notifications. Users can pause/resume notification animations by hovering over them.
+// Display a success notification
+toast.success("Task completed successfully!");
